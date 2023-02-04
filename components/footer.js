@@ -1,10 +1,16 @@
 import { Box } from '@chakra-ui/react'
+import Layout from "./layouts/article";
 
 const Footer = () => {
   return (
-    <Box align="center" opacity={0.4} fontSize="sm">
-      &copy; {new Date().getFullYear()} Takuya Matsuyama. All Rights Reserved.
+    <Layout>
+      <Box align="center" opacity={0.4} fontSize="sm">
+      &copy; {new Date().getFullYear()} Nico Madry. All Rights Reserved.
     </Box>
+    <Box align="center" opacity={0.4} fontSize="sm">
+        This website is built based on <a href='https://www.craftz.dog/' target='_blank' rel='noreferrer'>Takuya Matsuyama's website</a>
+    </Box>
+    </Layout>
   )
 }
 
