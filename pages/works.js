@@ -10,7 +10,7 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Works
+        Personal projects
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -19,12 +19,8 @@ const Works = () => (
             A showcase project used as application example for Finologee.
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem id="digicash" title="Digicash" thumbnail={thumbDigicash}>
-            A
-          </WorkGridItem>
-        </Section>
       </SimpleGrid>
+
       <Box
           borderRadius="lg"
           mb={6}
@@ -35,6 +31,18 @@ const Works = () => (
       >
        There are no more public or free-time projects but hopefully there will be more in the future!
       </Box>
+      
+      <Heading as="h3" fontSize={20} mb={4}>
+        Work contributions
+      </Heading>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Section>
+          <WorkGridItem id="digicash" title="Digicash" thumbnail={thumbDigicash}>
+            Mobile payments platform to streamline payments between users and merchants
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
     </Container>
   </Layout>
 )

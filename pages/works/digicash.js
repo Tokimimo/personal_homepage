@@ -16,12 +16,12 @@ const Work = () => (
         <Container>
             <Title>
                 Digicash
-                <Badge>2019-2023</Badge>
+                <Badge>2012-2023</Badge>
             </Title>
             <Center my={6}>
             </Center>
             <P>
-                Maintaining and developing the project Digicash.
+                Contributed through maintaining and developing the project Digicash.
             </P>
             <br/>
             <P>
@@ -51,18 +51,12 @@ const Work = () => (
 
             <List ml={4} my={4}>
                 <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>Spring boot</span>
+                    <Meta>Platform</Meta>
+                    <span>iOS & Android</span>
                 </ListItem>
                 <ListItem>
-                    <Meta>View</Meta>
-                    <Link href="https://github.com/Tokimimo/banking">
-                        @Github
-                    </Link>
-                </ListItem>
-                <ListItem>
-                    <Meta>Last update</Meta>
-                    <span>04/2022</span>
+                    <Meta>Contributed through</Meta>
+                    <span>2019-2023</span>
                 </ListItem>
             </List>
         </Container>
