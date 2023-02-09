@@ -52,7 +52,7 @@ const Work = () => (
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Stack</Meta>
-                    <span>Spring boot</span>
+                    <span>Java 17, Spring boot</span>
                 </ListItem>
                 <ListItem>
                     <Meta>View</Meta>

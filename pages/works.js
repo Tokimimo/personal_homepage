@@ -4,7 +4,6 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbBanking from '../public/images/works/banking_stock.jpg'
-import thumbDigicash from '../public/images/works/digicash_thumb.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -36,13 +35,16 @@ const Works = () => (
         Work contributions
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-      <Section>
-          <WorkGridItem id="digicash" title="Digicash" thumbnail={thumbDigicash}>
-            Mobile payments platform to streamline payments between users and merchants
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
+            <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="center"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{backdropFilter: 'blur(10px)'}}
+      >
+       Currently under construction
+      </Box>
     </Container>
   </Layout>
 )
