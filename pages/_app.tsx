@@ -9,11 +9,11 @@ if (typeof window !== 'undefined') {
 
 function Website({ Component, pageProps, router }) {
   return (
-    <Chakra cookies={pageProps.cookies}>
+    <Chakra>
       <Fonts />
       <Layout router={router}>
         <AnimatePresence
-          exitBeforeEnter
+          mode='wait'
           initial={true}
           onExitComplete={() => {
             if (typeof window !== 'undefined') {
