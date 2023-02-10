@@ -6,7 +6,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbBanking from '../public/images/works/banking_stock.jpg'
 import thumbDigicash from '../public/images/works/digicash_thumb.png'
 
-const Works = () => (
+const Works = ({works}) => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
@@ -46,6 +46,42 @@ const Works = () => (
     </Container>
   </Layout>
 )
+
+      /*
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        {works.map((work) => (
+          <Section>
+            <WorkGridItem id="work.id" title="work.title" thumbnail={work.thumbnail}>
+               work.description
+            </WorkGridItem>
+          </Section>
+        ))}
+      </SimpleGrid>
+      */
+
+// This function gets called at build time on server-side.
+// It won't be called on client-side, so you can even do
+// direct database queries.
+/*
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const res = await fetch('https://nicomadry.de/works')
+  const works = await res.json()
+
+  // By returning { props: { posts } }, the Blog component
+  // will receive `posts` as a prop at build time
+  return {
+    props: {
+      works,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
+  }
+} 
+*/
 
 export default Works
 export { getServerSideProps } from '../components/chakra'

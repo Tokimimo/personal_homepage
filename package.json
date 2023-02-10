@@ -1,7 +1,7 @@
 {
-  "name": "craftzdog-homepage",
+  "name": "personal-homepage",
   "version": "1.0.0",
-  "description": "Takuya's website",
+  "description": "Nico Madry's website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
     "build": "next build",
@@ -10,7 +10,7 @@
     "lint": "next lint"
   },
   "keywords": [],
-  "author": "Takuya Matsuyama",
+  "author": "Nico Madry",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",
@@ -22,9 +22,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "three": "^0.148.0"
+    "three": "^0.148.0",
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.27",
     "eslint": "^8.31.0",
     "eslint-config-next": "^13.1.1",
     "prettier": "^2.8.2"
