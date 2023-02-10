@@ -39,7 +39,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 }
 
 const MenuLink = forwardRef((props, ref) => (
-  <Link ref={ref} as={NextLink} {...props} />
+  <Link href={ref} as={NextLink} {...props} />
 ))
 
 const Navbar = props => {
@@ -59,9 +59,6 @@ const Navbar = props => {
         display="flex"
         p={2}
         maxW="container.md"
-        wrap="wrap"
-        align="center"
-        justify="space-between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -77,10 +74,10 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          <LinkItem href="/works" path={path} target="_self">
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="/posts" path={path} target="_self">
             Posts
           </LinkItem>
           <LinkItem
@@ -97,7 +94,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={1} alignItems="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>

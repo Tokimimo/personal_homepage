@@ -8,7 +8,7 @@ const variants = {
   exit: { opacity: 0, x: -0, y: 20 }
 }
 
-const Layout = ({ children, title }) => {
+function Layout({ children, title }) {
   const t = `${title} - Nico Madry`
   return (
     <motion.article

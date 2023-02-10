@@ -1,7 +1,6 @@
 import {
     Container,
     Badge,
-    Link,
     List,
     ListItem,
     UnorderedList,
@@ -64,4 +63,3 @@ const Work = () => (
 )
 
 export default Work
-export {getStaticProps} from '../../components/chakra'

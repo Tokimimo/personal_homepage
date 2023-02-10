@@ -23,7 +23,7 @@ const ProfileImage = chakra(Image, {
 })
 
 const Home = () => (
-    <Layout>
+    <Layout title="Homepage">
         <Container>
             <Box
                 borderRadius="lg"
@@ -90,7 +90,7 @@ const Home = () => (
                     After writing basic example programs such as a simple calculator through an introduction book,
                     the journey continued with bash scripts and C#.
                 </Paragraph>
-                <Box align="center" my={4}>
+                <Box my={4}>
                     <Button
                         as={NextLink}
                         href="/works"
@@ -190,7 +190,7 @@ const Home = () => (
                     </ListItem>
                 </List>
 
-                <Box align="center" my={4}>
+                <Box my={4}>
                     <Button
                         as={NextLink}
                         href="/posts"
