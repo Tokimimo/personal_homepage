@@ -8,7 +8,7 @@ import {
     List,
     ListItem,
     useColorModeValue,
-    chakra
+    chakra, Center
 } from '@chakra-ui/react'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -90,17 +90,19 @@ const Home = () => (
                     After writing basic example programs such as a simple calculator through an introduction book,
                     the journey continued with bash scripts and C#.
                 </Paragraph>
-                <Box my={4}>
-                    <Button
-                        as={NextLink}
-                        href="/works"
-                        scroll={false}
-                        rightIcon={<ChevronRightIcon/>}
-                        colorScheme="teal"
-                    >
-                        My portfolio
-                    </Button>
-                </Box>
+                <Center>
+                    <Box alignItems="center" my={4}>
+                        <Button
+                            as={NextLink}
+                            href="/works"
+                            scroll={false}
+                            rightIcon={<ChevronRightIcon/>}
+                            colorScheme="teal"
+                        >
+                            My portfolio
+                        </Button>
+                    </Box>
+                </Center>
             </Section>
 
             <Section delay={0.2}>
@@ -190,17 +192,19 @@ const Home = () => (
                     </ListItem>
                 </List>
 
-                <Box my={4}>
-                    <Button
-                        as={NextLink}
-                        href="/posts"
-                        scroll={false}
-                        rightIcon={<ChevronRightIcon/>}
-                        colorScheme="teal"
-                    >
-                        My posts
-                    </Button>
-                </Box>
+                <Center>
+                    <Box my={4}>
+                        <Button
+                            as={NextLink}
+                            href="/posts"
+                            scroll={false}
+                            rightIcon={<ChevronRightIcon/>}
+                            colorScheme="teal"
+                        >
+                            My posts
+                        </Button>
+                    </Box>
+                </Center>
             </Section>
         </Container>
     </Layout>
