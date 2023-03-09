@@ -9,7 +9,7 @@ import {
     List,
     ListItem,
     useColorModeValue,
-    chakra
+    chakra, Center
 } from '@chakra-ui/react'
 import {ChevronRightIcon} from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -193,6 +193,19 @@ const Home = () => (
                     </ListItem>
                 </List>
 
+                <Center>
+                    <Box my={4}>
+                        <Button
+                            as={NextLink}
+                            href="/posts"
+                            scroll={false}
+                            rightIcon={<ChevronRightIcon/>}
+                            colorScheme="teal"
+                        >
+                            My posts
+                        </Button>
+                    </Box>
+                </Center>
                 <Center>
                     <Box my={4}>
                         <Button
