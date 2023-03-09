@@ -5,6 +5,7 @@ import {
     Heading,
     Box,
     Button,
+    Center,
     List,
     ListItem,
     useColorModeValue,
@@ -90,17 +91,19 @@ const Home = () => (
                     After writing basic example programs such as a simple calculator through an introduction book,
                     the journey continued with bash scripts and C#.
                 </Paragraph>
-                <Box my={4}>
-                    <Button
+                <Center>
+                    <Box my={4}>
+                        <Button
                         as={NextLink}
                         href="/works"
                         scroll={false}
                         rightIcon={<ChevronRightIcon/>}
                         colorScheme="teal"
-                    >
+                        >
                         My portfolio
-                    </Button>
-                </Box>
+                        </Button>
+                    </Box>
+                </Center>
             </Section>
 
             <Section delay={0.2}>
@@ -190,17 +193,19 @@ const Home = () => (
                     </ListItem>
                 </List>
 
-                <Box my={4}>
-                    <Button
-                        as={NextLink}
-                        href="/posts"
-                        scroll={false}
-                        rightIcon={<ChevronRightIcon/>}
-                        colorScheme="teal"
-                    >
-                        My posts
-                    </Button>
-                </Box>
+                <Center>
+                    <Box my={4}>
+                        <Button
+                            as={NextLink}
+                            href="/posts"
+                            scroll={false}
+                            rightIcon={<ChevronRightIcon/>}
+                            colorScheme="teal"
+                        >
+                            My posts
+                        </Button>
+                    </Box>
+                </Center>
             </Section>
         </Container>
     </Layout>

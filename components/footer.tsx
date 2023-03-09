@@ -7,6 +7,8 @@ const Footer = () => {
         <Box opacity={0.4} fontSize="sm">
           &copy; {new Date().getFullYear()} Nico Madry. All Rights Reserved.
         </Box>
+      </Center>
+      <Center>
         <Box opacity={0.4} fontSize="sm">
           This website is built based on <a href='https://www.craftz.dog/' target='_blank' rel='noreferrer'>Takuya Matsuyama&apos;s website</a>
         </Box>

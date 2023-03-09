@@ -57,10 +57,11 @@ const Navbar = props => {
     >
       <Container
         display="flex"
+        justifyContent='space-between'
         p={2}
         maxW="container.md"
       >
-        <Flex align="center" mr={5}>
+        <Flex align="center" gap='4px'>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
@@ -94,10 +95,10 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} alignItems="right">
+        <Box display='flex' gap='8px' flex={0} alignItems="right">
           <ThemeToggleButton />
 
-          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+          <Box>
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
